@@ -343,7 +343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transformation_time: 2
-  platform_movement: {x: 0, y: -8, z: 0}
+  platform_movement: {x: 0, y: 8, z: 0}
   platform_scaling: {x: 1, y: 1, z: 1}
   platform: {fileID: 104994}
   player_tag: Player

@@ -9,10 +9,12 @@ public class FreerangeController : MonoBehaviour {
     private Rigidbody m_rb;
     private Vector3 direction;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         m_rb = GetComponent<Rigidbody>();
     }
+
 
     void move_to_player()
     {
@@ -21,7 +23,7 @@ public class FreerangeController : MonoBehaviour {
         //      speed is the provided speed float value
         direction = player.transform.position - transform.position;
         direction = Vector3.Normalize(direction);
-        m_rb.velocity = direction * speed; 
+        m_rb.velocity = direction * speed;
     }
 
     void OnTriggerEnter(Collider other)
